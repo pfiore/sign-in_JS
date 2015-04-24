@@ -6,7 +6,8 @@
 <div class="well well-lg">
   <ul>
     <li ng-repeat="item in students">
-      {{ item.name }}
+      <span class="students">{{ item.name }}</span>
+      <br>
       <button ng-click="signIn(item)" ng-show="!item.sign_in" class="btn btn-info btn-xs">
         Sign In
       </button>
