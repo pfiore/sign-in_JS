@@ -2,10 +2,16 @@
 
 <ul>
   <li ng-repeat="item in students">
-  <button ng-click="studentSignIn(item)" ng-show="!item.sign_in" class="btn btn-default btn-xs">
-  Sign In
-  </button>
-  {{ item.name }}
+    {{ item.name }}
+    <br>
+    <button ng-click="signIn(item)" ng-show="!item.sign_in" class="btn btn-default btn-xs">
+      Sign In
+    </button>
+    <button ng-click="signOut(item)" ng-show="item.sign_in" class="btn btn-warning btn-xs">
+      Sign Out
+    </button>
+    <br>
+    <br>
   </li>
 
 
