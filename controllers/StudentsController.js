@@ -9,11 +9,4 @@ studentSignIn.controller('StudentsCtrl', function StudentsCtrl($scope, StudentsF
   $scope.signOut = function(student) {
       student.sign_in = false;
   };
-
 });
-
-
-
-  // $scope.getSignIn = function(student) {
-  //   return $scope.StudentsFactory.getSignIn(student);
-  // };
