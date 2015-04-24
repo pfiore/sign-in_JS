@@ -1,0 +1,13 @@
+<h2> Please Sign In </h2>
+
+<ul>
+  <li ng-repeat="item in students">
+  <button ng-click="studentSignIn(item)" ng-show="!item.sign_in" class="btn btn-default btn-xs">
+  Sign In
+  </button>
+  {{ item.name }}
+  </li>
+
+
+
+</ul>
