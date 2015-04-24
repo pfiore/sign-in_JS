@@ -1,41 +1,7 @@
-a:hover,
-.column-name:hover,
-.clickable:hover {
-  cursor: pointer;
-}
-
-ul {
-  list-style-type: none;
-}
-
-.clickable {
-  color: #BF1950;
-}
-
-.chart-titles {
-  border-bottom: solid 3px lightgrey;
-}
-
-.column-name {
-  color: green;
-  font-weight: 500;
-}
-
-
 body {
     background-color: white;
 }
 
-
-header {
-  text-align: center;
-  margin-bottom: 25px;
-  padding: 25px 0;
-  background-color: #FCFEFF;
-  background-position: center;
-  background-size: 100%;
-
-}
 
 .jumbotron {
   margin-top: 40px;
