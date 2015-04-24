@@ -5,7 +5,7 @@ studentSignIn.controller('StudentsCtrl', function StudentsCtrl($scope, StudentsF
   $scope.signIn = function(student) {
     student.sign_in = true;
   };
-  
+
   $scope.signOut = function(student) {
       student.sign_in = false;
   };
