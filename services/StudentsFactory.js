@@ -1,26 +1,16 @@
-studentRoster.factory('StudentsFactory', function StudentsFactory() {
+studentSignIn.factory('StudentsFactory', function StudentsFactory() {
   var factory = {};
-  factory.students = ["Gurgen", "Gurgie", "David Hasselhoff"];
-
-
-  factory.addSignIn = function(student) {
-    var index = factory.getIndex(student);
-    factory.students[index].signInSheet = true;
-  };
-
-  factory.getIndex = function(student) {
-    return factory.students.indexOf(student);
-  };
-
-  factory.getSignIn = function(student) {
-    var index = factory.getIndex(student);
-    return factory.students[index].signInSheet === true ? "Signed-In" : "Signed-Out";
-  };
-
-  factory.changeSignIn = function(student) {
-    var index = factory.getIndex(student);
-    factory.students[index].signInSheet = factory.students[index].signInSheet ? false : true;
-  }
+  factory.students = [
+    {name: "Gurgen", sign_in = false},
+    {name: "Gurgie", sign_in = false},
+    {name: "David Hasselhoff", sign_in = false},
+    {name: "Waldo", sign_in = false},
+    {name: "Benny Benson", sign_in = false},
+    {name: "Bob Belcher", sign_in = false},
+    {name: "Tina", sign_in = false},
+    {name: "Laurie", sign_in = false},
+    {name: "SnaggleTooth", sign_in = false},
+  ];
 
   return factory;
 });
