@@ -6,4 +6,11 @@ studentSignIn.config(function($stateProvider) {
     templateUrl: "patrials/home.html"
   });
 
+  $stateProvider.state('sign_in_sheet', {
+  url: 'sign_in_sheet',
+  templateUrl: 'partials/sign_in_sheet.html',
+  controller: 'StudentsCtrl'
+});
+
+
 });
