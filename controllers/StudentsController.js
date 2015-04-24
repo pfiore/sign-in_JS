@@ -2,16 +2,18 @@ studentSignIn.controller('StudentsCtrl', function StudentsCtrl($scope, StudentsF
   $scope.StudentsFactory = StudentsFactory;
   $scope.students = StudentsFactory.students;
 
-  $scope.addSignIn = function(student) {
-    $scope.StudentsFactory.addSignIn(student);
+  $scope.signIn = function(student) {
+    student.sign_in = true;
   };
-
-  $scope.getSignIn = function(student) {
-    return $scope.StudentsFactory.getSignIn(student);
-  };
-
-  $scope.changeSignIn = function(student) {
-    return $scope.StudentsFactory.changeSignIn(student);
+  
+  $scope.signOut = function(student) {
+      student.sign_in = false;
   };
 
 });
+
+
+
+  // $scope.getSignIn = function(student) {
+  //   return $scope.StudentsFactory.getSignIn(student);
+  // };
