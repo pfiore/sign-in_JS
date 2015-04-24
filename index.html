@@ -9,7 +9,6 @@
   <script src="controllers/StudentsController.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/styles.css">
-
 </head>
 <body>
   <header>
@@ -17,33 +16,37 @@
   </header>
   <div class="container">
     <div ng-controller="StudentsCtrl">
-
       <!-- *********  Students List  ************** -->
-      <div class="row well" ng-show="students.length && filtered.length">
+      <div class="row well" ng-show="students.length">
         <div>
           <div class="col-md-12">
-            <h2 ng-show="students.length && filtered.length">Student List</h2>
+            <h2>Student List</h2>
+            <ul>
+                <li ng-repeat="student in students" ng-show="students">
+                    <p>{{ student.name }} </p>
+                </li>
+            </ul>
+
+
             <!-- <h2 ng-show="students.length && !filtered.length">No Matches</h2> -->
             <!-- <div ng-show="students.length && filtered.length" class="row chart-titles"> -->
+<!--
 
-              <div ng-click="sortColumn('name')" class="col-md-4 column-name">
-                Name
-              </div>
               <div ng-click="sortColumn('signInSheet')" class="col-md-4 column-name">
                 Signed In?
               </div>
               <div class="col-md-4 column-name">
                 Delete
-              </div>
+              </div> -->
             </div>
 
-            <div ng-show="students.length && filtered.length">
-              <div ng-repeat="item in filtered = (students | filter:query:startsWith | orderBy:column )">
+            <div ng-show="students.length">
+              <div ng-repeat="item in students">
                 <div class="col-md-4">
-                  <span class="clickable" ng-click="editing = true" ng-hide="editing">{{item.name}}</span>
+                  <span class="clickable">{{item.name}}</span>
                 </div>
                 <div class="col-md-4">
-                  <a class="clickable" ng-click="changePermission(item)">{{getPermission(item)}}</a>
+                  <a class="clickable" ng-click="changeSignIn(item)">{{getSign(item)}}</a>
                 </div>
 
                 <div class="col-md-4">
@@ -52,15 +55,18 @@
                     </span>
                   </button>
                 </div>
-
+<!--
                 <span class="form-group" ng-show="editing" ng-submit="editing = false">
                   <form class="form-inline" role="form">
                     <input type="text" class="form-control input-sm" ng-model="item.name" placeholder="Name" required/>
                     <button class="btn btn-default btn-sm" type="submit">Save</button>
                   </form>
-                </span>
+                </span> -->
               </div>
             </div>
+
+
+
           </div>
         </div>
       </div>

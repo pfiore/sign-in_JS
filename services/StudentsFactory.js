@@ -1,6 +1,6 @@
 studentRoster.factory('StudentsFactory', function StudentsFactory() {
   var factory = {};
-  factory.students = [];
+  factory.students = ["Gurgen", "Gurgie", "David Hasselhoff"];
 
 
   factory.addSignIn = function(student) {

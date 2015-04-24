@@ -31,7 +31,7 @@ header {
   text-align: center;
   margin-bottom: 25px;
   padding: 25px 0;
-  background: url('http://all-that-is-interesting.com/wordpress/wp-content/uploads/2012/08/okinawa-aquarium-photograph.jpg') no-repeat;
+  background-color: #FCFEFF;
   background-position: center;
   background-size: 100%;
 
@@ -39,8 +39,8 @@ header {
 
 h1 {
   font-family: Palatino, serif;
-  color: snow;
-  text-shadow: 2px 2px 20px #000000;
+  color: black;
+  text-shadow: 2px 2px 10px #000000;
   margin-top: 0;
 }
 
