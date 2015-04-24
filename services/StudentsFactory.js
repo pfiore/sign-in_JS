@@ -2,34 +2,25 @@ studentRoster.factory('StudentsFactory', function StudentsFactory() {
   var factory = {};
   factory.students = [];
 
-  factory.addStudent = function(name) {
-    var student = { name: name, permissionSlip: false };
-    factory.students.push(student);
-  };
 
-  factory.deleteStudent = function(student) {
+  factory.addSignIn = function(student) {
     var index = factory.getIndex(student);
-    factory.students.splice(index, 1);
-  };
-
-  factory.addPermission = function(student) {
-    var index = factory.getIndex(student);
-    factory.students[index].permissionSlip = true;
+    factory.students[index].signInSheet = true;
   };
 
   factory.getIndex = function(student) {
     return factory.students.indexOf(student);
   };
 
-  factory.getPermission = function(student) {
+  factory.getSignIn = function(student) {
     var index = factory.getIndex(student);
-    return factory.students[index].permissionSlip === true ? "yes" : "no";
+    return factory.students[index].signInSheet === true ? "Signed-In" : "Signed-Out";
   };
 
-  factory.changePermission = function(student) {
+  factory.changeSignIn = function(student) {
     var index = factory.getIndex(student);
-    factory.students[index].permissionSlip = factory.students[index].permissionSlip ? false : true;
+    factory.students[index].signInSheet = factory.students[index].signInSheet ? false : true;
   }
-  
+
   return factory;
 });
