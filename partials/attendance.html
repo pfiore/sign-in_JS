@@ -1,7 +1,6 @@
-
 <a ui-sref="sign_in_sheet">Sign in </a>|
 <a ui-sref="attendance">Who's here</a>
-<h1> Present </h1>
+<h2> Present </h2>
 <div class="well well-lg">
   <ul ng-repeat="item in students">
     <div ng-hide="item.sign_in === false">
@@ -12,7 +11,7 @@
   </ul>
 </div>
 
-<h1> Absent </h1>
+<h2> Absent </h2>
 <div class="well well-lg">
   <ul ng-repeat="item in students">
     <div ng-hide="item.sign_in === true">
