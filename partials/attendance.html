@@ -1,0 +1,21 @@
+<h1> Here </h1>
+  <ul ng-repeat="item in students">
+    <div ng-hide="item.sign_in === false">
+      <li>
+        {{ item.name }}
+      </li>
+    </div>
+  </ul>
+
+
+
+
+
+<h1> Not Here </h1>
+<ul ng-repeat="item in students">
+  <div ng-hide="item.sign_in === true">
+    <li>
+      {{ item.name }}
+    </li>
+  </div>
+</ul>
