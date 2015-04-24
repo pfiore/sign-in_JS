@@ -1,14 +1,14 @@
-# Angular Field Trip Permissions for Epicodus
-## by Daniel Toader and Patrick Fiorentino
-### Date: April 21, 2015
+# Angular Sign in Sheet for Epicodus
+## by Patrick Fiorentino
+### Date: April 24, 2015
 #### Description
-Simple student roster single page app that lets a user add, remove, and update students as well as assign them field-trip permission.
+Simple student roster page where students can sign in and sign out.
 
 #### Setup instructions
 1. Clone this git repository
 2. Load index.html in your browser.
 
-#### Copyright © 2015, Daniel Toader and Patrick Fiorentino
+#### Copyright © 2015, Patrick Fiorentino
 
 #### License: [MIT](https://github.com/twbs/bootstrap/blob/master/LICENSE)
 
