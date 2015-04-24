@@ -2,8 +2,19 @@ body {
     background-color: white;
 }
 
+.present {
+  color: green;
+  font-size: 20px;
+}
+
 .students {
   font-size: 20px;
+}
+
+.absent {
+  color: red;
+  font-size: 20px;
+
 }
 
 .jumbotron {

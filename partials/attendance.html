@@ -6,7 +6,7 @@
   <ul ng-repeat="item in students">
     <div ng-hide="item.sign_in === false">
       <li>
-        <span class="students">{{ item.name }}</span>
+        <span class="present">{{ item.name }}</span>
       </li>
     </div>
   </ul>
@@ -17,7 +17,7 @@
   <ul ng-repeat="item in students">
     <div ng-hide="item.sign_in === true">
       <li>
-        <span class="students">{{ item.name }}</span>
+        <span class="absent">{{ item.name }}</span>
       </li>
     </div>
   </ul>
