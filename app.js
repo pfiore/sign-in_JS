@@ -7,10 +7,16 @@ studentSignIn.config(function($stateProvider) {
   });
 
   $stateProvider.state('sign_in_sheet', {
-  url: 'sign_in_sheet',
-  templateUrl: 'partials/sign_in_sheet.html',
-  controller: 'StudentsCtrl'
+    url: 'sign_in_sheet',
+    templateUrl: 'partials/sign_in_sheet.html',
+    controller: 'StudentsCtrl'
   });
+
+  $stateProvider.state('attendance', {
+    url: 'attendance',
+    templateUrl: 'partials/attendance.html',
+    controller: 'StudentsCtrl'
+  })
 
 
 });
